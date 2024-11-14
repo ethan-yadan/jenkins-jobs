@@ -13,6 +13,15 @@ with it and push that container to docker hub registry.
     - Tag docker images with docker hub registry to push to.
     - Push to registry
 
+- Create Token on your jenkins account
+- Test to run the test job via `curl` command
+- Create Job that will do the following:
+    - Clone project(details-app) from gitlab/hub
+    - Build docker images
+    - Tag docker images with docker hub registry to push to.
+    - Push to registry
+
+If you wish to use python/Go/ruby/PowerShell, verify first that these are installed on the jenkins master container
 
 ## Table Of Contents
 
