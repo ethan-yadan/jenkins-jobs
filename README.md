@@ -26,6 +26,7 @@ If you wish to use python/Go/ruby/PowerShell, verify first that these are instal
 ## Table Of Contents
 
 - [Prerequisites](#prerequisites)
+- (Links](#links) 
 - [Usage](#usage)
 - [Script](#script)
 - [Installation](#installation)
@@ -37,6 +38,10 @@ If you wish to use python/Go/ruby/PowerShell, verify first that these are instal
 2. python 3.5 or later (python ≥ 3.6 is recommended) and pip are installed
 3. Docker environment installed (docker-compose)
 4. Account on docker hub
+
+## Links
+- [Project: Details-App](https://github.com/zero-pytagoras/details-app.git)
+- [Jenkins Shallow Dive: Course Material](https://gitlab.com/vaiolabs-io/jenkins-shallow-dive.git)
 
 ## Installation 
 ### Updating, upgarding and installing in linux debian: 
