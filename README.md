@@ -1,4 +1,4 @@
-![Jenkins Pipeline Meme](jenkinsmeme.png)
+![Jenkins Pipeline Meme](pipelinememe.png)
 
 # Jenkins Jobs Task 
 
