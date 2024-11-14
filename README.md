@@ -26,7 +26,7 @@ If you wish to use python/Go/ruby/PowerShell, verify first that these are instal
 ## Table Of Contents
 
 - [Prerequisites](#prerequisites)
-- (Links](#links) 
+- [Links](#links) 
 - [Usage](#usage)
 - [Script](#script)
 - [Installation](#installation)
@@ -41,7 +41,7 @@ If you wish to use python/Go/ruby/PowerShell, verify first that these are instal
 
 ## Links
 - [Project: Details-App](https://github.com/zero-pytagoras/details-app.git)
-- [Jenkins Shallow Dive: Course Material](https://gitlab.com/vaiolabs-io/jenkins-shallow-dive.git)
+
 
 ## Installation 
 ### Updating, upgarding and installing in linux debian: 
