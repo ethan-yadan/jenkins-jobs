@@ -27,7 +27,15 @@ with it and push that container to docker hub registry.
 3. Docker environment installed (docker-compose)
 4. Account on docker hub
 
+## Installation 
+### Updating, upgarding and installing in linux debian: 
 
+1. ''' sudo apt update '''
+2. ''' sudo apt-get upgrade '''
+3. ''' sudo apt install python3-pip '''
+4. ''' sudo apt install docker-compose '''
+5. ''' ansible --version '''
+   * check ansible installed and version 
 
 - Jenkins master
 - RestAPI access via account
