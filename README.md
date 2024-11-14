@@ -1,3 +1,5 @@
+![Jenkins Pipeline Meme](jenkinsmeme.png)
+
 # Jenkins Jobs Task 
 
 Create Jenkins job that you can trigger via `curl` command, which will clone the project (details-app) from the github/gitlab and build container 
