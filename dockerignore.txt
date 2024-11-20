@@ -1,5 +1,0 @@
-__pycache__
-venv
-.vscodium
-*.csv
-data
