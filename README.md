@@ -2,13 +2,14 @@
 
 # Jenkins Jobs Task 
 
-Create Jenkins job that you can trigger via `curl` command, which will clone the project (details-app) from the github/gitlab and build container 
-with it and push that container to docker hub registry.
+This task is to create Jenkins job that can trigger via `curl` command, which will clone the project named details-app (linked below) 
+from the github/gitlab and build a container with it and push that container into docker hub registry.
 
-- Create Token on your jenkins account
-- Test to run the test job via `curl` command
-- Create Job that will do the following:
-    - Clone project(details-app) from gitlab/hub
+Steps: 
+- Creating a Token on my jenkins account
+- Testing to run the test job via `curl` command
+- Creating a job that will do the following:
+    - Clone project (details-app) from gitlab/hub
     - Build docker images
     - Tag docker images with docker hub registry to push to.
     - Push to registry
