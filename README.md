@@ -50,36 +50,37 @@ Steps:
 
 ### Updating, upgarding and installing in linux debian: 
 
-1. ''' sudo apt update '''
-2. ''' sudo apt-get upgrade '''
-3. ''' sudo apt install python3-pip '''
-4. ''' sudo apt install docker-compose '''
-5. ''' sudo apt install default-jdk '''
+- ''' sudo apt update '''
+- ''' sudo apt-get upgrade '''
+- ''' sudo apt install python3-pip '''
+- ''' sudo apt install docker-compose '''
+- ''' sudo apt install default-jdk '''
 
 ### Adding Jenkins repository, installation and access: 
 
-6. ''' sudo docker-compose up -d '''
-7. ''' sudo docker compose logs main '''
+- ''' ./setup.sh '''
+- ''' sudo docker-compose up -d '''
+- ''' sudo docker compose logs main '''
    (copy the password generated in logs main, use it in initial enter to jenkins console)
-8. ''' ip -br a '''
+- ''' ip -br a '''
    (find machine's localhost IP at the list, use it to enter jenkins console thru web browser) 
-9. ''' sudo apt update ''''
-10. ''' sudo apt install jenkins '''
-11. ''' sudo systemctl start jenkins '''
+- ''' sudo apt update ''''
+- ''' sudo apt install jenkins '''
+- ''' sudo systemctl start jenkins '''
 
 ### Enter Jenkins console 
 
-12. Open a web browser and go to http://jenkins-ip-address:8080
+- Open a web browser and go to http://jenkins-ip-address:8080
     (replace localhost IP with the IP retrieved in step 8)
-13. enter Admin username and password to login
+- Enter Admin username and password to login
     (use password generated in step 7)
-14. install recommended updates and packages in jenkins console
+- Install recommended updates and packages in jenkins console
 
 ### configure pipeline jenkinsfile triggerd by curl post 
 
-15. Add new API Token, named 'myToken'
+- Add new API Token, named 'myToken'
     (user -> configure -> api token // save token hash)
-16. Create a pipeline SCM using jenkinsfile
-17. Build trigger builds remotely (RestAPI access)
-18. ''' curl -I --user admin:TOKEN http://jenkins-ip-address:8080/job
+- Create a pipeline SCM using jenkinsfile
+- Build trigger builds remotely (RestAPI access)
+- ''' curl -I --user admin:TOKEN http://jenkins-ip-address:8080/job
 
