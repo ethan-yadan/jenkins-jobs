@@ -69,7 +69,7 @@ Steps:
 
 ### Enter Jenkins console 
 
-12. Open a web browser and go to http://localhost IP:8080
+12. Open a web browser and go to http://jenkins-ip-address:8080
     (replace localhost IP with the IP retrieved in step 8)
 13. enter Admin username and password to login
     (use password generated in step 7)
@@ -77,8 +77,9 @@ Steps:
 
 ### configure pipeline jenkinsfile triggerd by curl post 
 
-15. 
-
-- RestAPI access via account
-- Jenkins Job With Required Steps
+15. Add new API Token, named 'myToken'
+    (user -> configure -> api token // save token hash)
+16. Create a pipeline SCM using jenkinsfile
+17. Build trigger builds remotely (RestAPI access)
+18. ''' curl -I --user admin:TOKEN http://jenkins-ip-address:8080/job
 
