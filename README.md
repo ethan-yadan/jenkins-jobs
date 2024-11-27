@@ -58,18 +58,27 @@ Steps:
 
 ### Adding Jenkins repository, installation and access: 
 
-6. ''' sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo gpg --dearmor -o /usr/share/keyrings/jenkins-keyring.asc '''
-7. ''' echo deb-src [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ '''
-8. ''' sudo tee /etc/apt/sources.list.d/jenkins.list '''
+6. ''' sudo docker-compose up -d '''
+7. ''' sudo docker compose logs main '''
+   (copy the password generated in logs main, use it in initial enter to jenkins console)
+8. ''' ip -br a '''
+   (find machine's localhost IP at the list, use it to enter jenkins console thru web browser) 
 9. ''' sudo apt update ''''
 10. ''' sudo apt install jenkins '''
 11. ''' sudo systemctl start jenkins '''
 
-token 
-install jenkins updates and packages 
-web interface
+### Enter Jenkins console 
 
-- Jenkins master
+12. Open a web browser and go to http://localhost IP:8080
+    (replace localhost IP with the IP retrieved in step 8)
+13. enter Admin username and password to login
+    (use password generated in step 7)
+14. install recommended updates and packages in jenkins console
+
+### configure pipeline jenkinsfile triggerd by curl post 
+
+15. 
+
 - RestAPI access via account
 - Jenkins Job With Required Steps
 
